@@ -1,0 +1,315 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.master {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  height: 60px;
+  background-color: #f1f1f1;
+}
+
+@supports (position: sticky) {
+  .master {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.master-table-external {
+  width: 100%;
+}
+
+.master-div-name {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(20%);
+  margin-left: 25px;
+  width: auto;
+}
+
+.master-div-table {
+  width: 50%;
+}
+
+.master-div {
+  width: 25%;
+}
+
+.master-feature {
+  font-size: 25pt;
+  font-family: "Century Schoolbook";
+  font-weight: bold;
+  color: #333333;
+}
+
+.master-table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 25%;
+  padding: 10px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  font-family: Arial;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.button:active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.page {
+  padding-top: 40px;
+  margin: 0;
+}
+
+hr {
+  margin-bottom: 50px;
+}
+
+.bg-about {
+  height: 130%;
+  margin: 0;
+}
+
+.bg-projects {
+  height: 290%;
+  margin: 0;
+}
+
+.bg-skills {
+  height: 130%;
+  margin: 0;
+}
+
+.bg-contact {
+  height: 75vh;
+  margin: 0;
+}
+
+.title {
+  font-size: 18pt;
+  font-family: Arial;
+  text-align: center;
+  color: dimgray;
+  margin-bottom: 30px;
+}
+
+.margin-left-right {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.project-cell {
+  padding: 0px 20px 0px 20px;
+  width: 33%;
+}
+
+.project-image {
+  width: 300px;
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.android-image {
+  border-radius: 50px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 40%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .project-image {
+  opacity: 0.05;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  width: 100%;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 32px;
+}
+
+.table-projects {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: -30px;
+}
+
+.skills-table {
+  margin: auto;
+  width: 100%;
+  padding-top: 2%;
+}
+
+.skills-td {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding-left: 5%;
+}
+
+.skills-text {
+  font-size: 16pt;
+  font-family: Century Schoolbook;
+  text-align: center;
+  color: gray;
+  height: 45px;
+  vertical-align: top;
+}
+
+.fa-star-size {
+  font-size: 30px;
+}
+
+.checked {
+  color: orange;
+}
+
+.about-td-image {
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.about-td-text {
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+.about-image {
+  border-radius: 5%;
+  display: block;
+  width: 400px;
+}
+
+.about-image-text {
+  font-size: smaller;
+  font-style: italic;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.about-text {
+  color: gray;
+  font-family: "Century Schoolbook";
+  text-align: left;
+}
+
+.contact-table {
+  margin: auto;
+  width: 60%;
+  padding-top: 13%;
+  padding-left: 17%;
+}
+
+.contact-image {
+  width: 30px;
+}
+
+.contact-td {
+  padding-left: 10px;
+}
+
+.contact-text {
+  font-size: 12pt;
+  font-family: Century Schoolbook;
+  text-align: center;
+  color: gray;
+  height: 45px;
+  vertical-align: top;
+}
+
+.footer {
+  font-size: 12pt;
+  font-family: sans-serif;
+  background-color: #333333;
+  color: white;
+  padding-top: 30px;
+  height: 80px;
+  text-align: center;
+}
